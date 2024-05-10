@@ -46,7 +46,7 @@ def included?(guess, grid)
           [0, "not an english word"]
         end
       else
-        [0, "not in the grid"]
+        [0, ""]
       end
     end
 

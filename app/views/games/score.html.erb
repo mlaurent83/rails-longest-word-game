@@ -1,0 +1,14 @@
+<h1>Result</h1>
+
+<% if @result[:score] > 0 %>
+  <h2>Congratulations!</h2>
+  <p>Your word scored <%= @result[:score] %> points.</p>
+<% else %>
+  <h2>Oops!</h2>
+  <p>Unfortunately, your word didn't score any points. <%= @result[:message] %></p>
+<% end %>
+
+<p>It took you <%= @result[:time].round(2) %> seconds to play.</p>
+
+
+<h3>Play again</h3>
